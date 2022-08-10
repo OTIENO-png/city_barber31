@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>group_31</title>
+    <link href="sytle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body id="body1">
+    <script>
+        $('kenyaone')
+            .on('mouseenter', function () {
+                $('#title1').show('fast');
+            })
+            .on('mouseleave', function () {
+                $('#title1').hide('fast');
+            });
+        function myFunction() {
+            let text;
+            let name = prompt("Please enter your name:", "*****");
+            if (name == null || name == "") {
+                text = "User cancelled the prompt.";
+            } else {
+                text = "Hello " + name + "we have received your message thank you for contacting us?";
+            }
+            document.getElementById("ouput").innerHTML = text;
+        }
+    </script>
+    <div>
+        <nav class="navbar">
+            <a href="index (2).html" class="nav-logo">GROUP 31</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#staffs">Staffs</a></li>
+                <li><a href="#message">Services offered</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="h1">
+        <h1>WELCOME TO CITY BARBER SHOP.</h1>
+        <p id="paragraph1">Welcome to City Barber shop and feel the value of your money from perfect hair cut from qualified Barbers,quality hair products and after shave products among others.</p>
+    </div><br><br>
+    <section id="testimonial">
+        <div id="message">
+              <p id="message1"><img src="assets/barbershop.webp">City barber shop or barbershop is an establishment that offers hair cutting services for men, women and children.City Barber
+            shops offer basic haircutting services for men, women and children. Barbershops are relatively inexpensive, as compared
+            to professional hair salons..</p><br><br>
+
+             </div>
+
+    </section><br><br>
+
+    <h1 id="staffs">STAFFS</h1>
+
+
+    <div class="column">
+        <img src="assets/proj.png" height="150" width="200"><br></br><br><br></br><br><br><br><br>
+        <div class="centered"><strong>Lubalo Brian</strong><br> 0708653380</div>
+    </div>
+    <div class="column">
+        <img src="assets/work4.jpg" height="150" width="200"><br></br><br><br></br><br><br><br><br>
+        <div class="centered"><strong>lumumba sandra</strong><br>0111606660</div>
+
+    </div>
+    <div class="column">
+        <img src="assets/work4.jpg" height="150" width="200"><br></br><br><br></br><br><br><br><br>
+        <div class="centered"><strong>Amwoka Bonventure</strong><br>0707974272</div>
+
+    </div>
+    <div class="column">
+        <img src="assets/work4.jpg" height="150" width="200"><br></br><br><br></br><br><br><br><br>
+        <div class="centered"><strong>Emmanuel Phobian</strong><br>0741701112</div>
+
+    </div>
+    <div class="column">
+        <img src="assets/work4.jpg" height="150" width="200"><br></br><br><br></br><br><br><br><br>
+        <div class="centered"><strong>Kafe Sebit</strong><br>0743898501</div>
+    </div>
+
+    <section id="contact">
+        <center>
+            <form id="three">
+                <fieldset>
+                    <center>
+                        <legend>CONTACT US.</legend>
+                    </center>
+
+                    <label>Name:</label>
+                    <input type="text" id="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email"><br><br>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="2" cols="40" placeholder="type you message" required></textarea><br>
+                    <button onclick="myFunction(name)">SUBMIT</button>
+
+                    <div id="ouput"></div>
+
+                </fieldset>
+
+            </form>
+
+    </section>
+    <div id="done">
+            <div>DELANI STUDIO</div>
+            <div style="font-style: italic;">2022</div>
+
+    </div>
+
+</body>
+</html>
